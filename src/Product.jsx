@@ -5,11 +5,11 @@ function Product({ title, log, price, thumbnail, sku }) {
 
   return (
     
-<div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 max-w-[250px]">
+<div className="bg-white grid grid-cols-1 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 max-w-[250px]">
 
   <div className="overflow-hidden">
     <img
-      className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
+      className="w-full aspect-square object-cover hover:scale-105 transition-transform duration-300"
       src={thumbnail}
       alt={title}
     />

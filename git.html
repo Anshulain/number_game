@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+ 
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+<div>
+
+
+<input class="form-control p-2 border border-gray-300 rounded m-2" type="text" id="userInput" placeholder="guess my number"/>
+
+
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="checkGuess()">Submit</button>
+<div id="result"></div>
+
+</div>
+ 
+<script>
+function checkGuess() {
+    let userInput = document.getElementById("userInput").value;
+    let xyz = "999";
+    
+
+    if (userInput == xyz) {
+        document.getElementById("result").innerHTML = "<div class='bg-gradient-to-r from-emerald-500 to-green-600 text-white px-8 py-4 rounded-2xl shadow-2xl mb-[550px] flex items-center justify-center h-20 font-bold text-xl tracking-wide'>you won</div>";
+    } else {
+        document.getElementById("result").innerHTML = "<div class='bg-gradient-to-r from-rose-500 to-red-600 text-white px-8 py-4 rounded-2xl shadow-2xl mb-[550px] flex items-center justify-center h-20 font-bold text-xl tracking-wide'>you lose</div>";
+    }
+    
+
+}
+</script>
+
+</body>
+</html>
